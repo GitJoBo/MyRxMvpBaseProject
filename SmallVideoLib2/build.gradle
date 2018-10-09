@@ -1,0 +1,101 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.novoda.bintray-release'
+
+
+def cfg = rootProject.ext.configuration
+android {
+    compileSdkVersion cfg.compileSdkVersion
+    //    buildToolsVersion cfg.buildToolsVersion
+    defaultConfig {
+        minSdkVersion cfg.minSdkVersion
+        targetSdkVersion cfg.targetSdkVersion
+        versionCode cfg.versionCode
+        versionName cfg.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //Error:All flavors must now belong to a named flavor dimension. Learn more at https://d.android.com/r/tools/flavorDimensions-missing-error-message.html
+        //版本名后面添加一句话，意思就是flavor dimension 它的维度就是该版本号，这样维度就是都是统一的了
+        flavorDimensions "versionCode"
+        //支持VectorDrawable,Can't process attribute android:fillColor="@color/common_gray": references to other resources are not supported by build-time PNG generation. See http://developer.android.com/tools/help/vector-asset-studio.html for details.
+        vectorDrawables.useSupportLibrary = true
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++11"
+            }
+        }
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+//            abiFilters "armeabi","armeabi-v7a"
+        }
+    }
+    buildTypes {
+        release {
+            postprocessing {
+                removeUnusedCode false
+                removeUnusedResources false
+                obfuscate false
+                optimizeCode false
+                proguardFile 'proguard-rules.pro'
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+}
+
+//android {
+//    compileSdkVersion 25
+//    buildToolsVersion "25.0.2"
+//    defaultConfig {
+//        minSdkVersion 14
+//        targetSdkVersion 25
+//        versionCode 11
+//        versionName "2.0.3"
+//        externalNativeBuild {
+//            cmake {
+//                cppFlags "-std=c++11"
+//            }
+//        }
+//        ndk{
+//            abiFilters "armeabi","armeabi-v7a","arm64-v8a","x86","x86_64"
+//        }
+//    }
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//    }
+//    lintOptions {
+//        abortOnError false
+//    }
+//    externalNativeBuild {
+//        cmake {
+//            path "CMakeLists.txt"
+//        }
+//    }
+//
+////    publish {
+////
+////        userOrg = 'mabeijianxi'//bintray.com用户名
+////        groupId = 'com.mabeijianxi'//jcenter上的路径
+////        artifactId = 'small-video-record2'//项目名称
+////        publishVersion = '2.0.3'//版本号
+////        desc = '利用FFmpeg来小视频录制与压缩处理!'//描述，不重要
+////        website = 'https://github.com/mabeijianxi/small-video-record'//网站，不重要
+////    }
+//}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}

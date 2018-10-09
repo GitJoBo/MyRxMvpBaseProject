@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="NineGridView">
+        <attr name="ngv_singleImageSize" format="dimension"/>
+        <attr name="ngv_singleImageRatio" format="float"/>
+        <attr name="ngv_gridSpacing" format="dimension"/>
+        <attr name="ngv_maxSize" format="integer"/>
+        <attr name="ngv_mode" format="enum">
+            <enum name="fill" value="0"/>
+            <enum name="grid" value="1"/>
+        </attr>
+    </declare-styleable>
+    
+    <declare-styleable name="BorderRelativeLayout">
+        <!--边框的粗度-->
+        <attr name="borderStrokeWidth" format="float"/>
+        <!--边框颜色-->
+        <attr name="borderColor" format="color"/>
+        <!--底边边线左边断开距离-->
+        <attr name="borderBottomLeftBreakSize" format="dimension"/>
+        <!--底边边线右边断开距离-->
+        <attr name="borderBottomRightBreakSize" format="dimension"/>
+        <!--是否需要上边框-->
+        <attr name="needTopBorder" format="boolean"/>
+        <!--是否需要左右边框-->
+        <attr name="needLeftAndRigtBorder" format="boolean"/>
+        <!--是否需要下边框-->
+        <attr name="needBottomBorder" format="boolean"/>
+    </declare-styleable>
+
+</resources>

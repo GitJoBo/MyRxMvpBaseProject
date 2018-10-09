@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jobo.myrxmvpbaseproject.widget.view.ErrorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/wh_ww"
+        android:id="@+id/errorLayout"
+        >
+
+</com.jobo.myrxmvpbaseproject.widget.view.ErrorLayout>

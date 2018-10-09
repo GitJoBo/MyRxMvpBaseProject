@@ -1,0 +1,2 @@
+include ':app', ':httplib', ':recycler', ':refresh-header', ':refresh-layout', ':GlideImageView', ':banner', ':jcvideoplayer-lib', ':jiaozivideoplayer', ':SmallVideoLib2'
+include ':WordMapLib'

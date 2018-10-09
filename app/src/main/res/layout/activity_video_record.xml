@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+        >
+    <Button
+            android:id="@+id/btn_sys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="系统录制"
+            />
+
+    <Button
+            android:id="@+id/btn_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义录制（MediaRecorder录制片段+isoviewer-1.0-RC-27.jar（mp4parser））"
+            />
+
+    <Button
+            android:id="@+id/btn_ffmpeg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="三方库（FFmpeg）"
+            />
+    <Button
+            android:id="@+id/btn_compress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="压缩本地视频"
+            />
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="line_net">请链接网络</string>
+    <string name="net_no_available">网络不可用</string>
+    <string name="net_no_availablehit">请检查网络</string>
+    <string name="set_net">设置网络</string>
+</resources>

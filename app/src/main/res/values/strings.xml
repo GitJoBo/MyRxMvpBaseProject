@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MyRx-Mvp</string>
+    <string name="hint_phone">输入想要查询的手机号</string>
+    <string name="submit">提交</string>
+    <string name="login">登录</string>
+
+    <string name="item_home">Home</string>
+    <string name="item_location">Location</string>
+    <string name="item_like">Like</string>
+    <string name="item_person">Me</string>
+
+    <string name="image_index">%1$d/%2$d</string>
+
+    <string name="line_net">请链接网络</string>
+    <string name="net_no_available">网络不可用</string>
+    <string name="net_no_availablehit">请检查网络</string>
+    <string name="set_net">设置网络</string>
+    <string name="s404">404</string>
+
+    <string name="is_null">暂无数据</string>
+
+
+</resources>

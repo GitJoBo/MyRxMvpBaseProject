@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jobo.myrxmvpbaseproject.widget.view.BorderRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                              xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                              android:layout_width="match_parent"
+                                                              android:layout_height="wrap_content"
+                                                              app:borderBottomLeftBreakSize="16dp"
+                                                              app:borderBottomRightBreakSize="16dp"
+
+                                                              app:borderColor="#eeeeee"
+                                                              app:borderStrokeWidth="3.0"
+        >
+
+    <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            />
+</com.jobo.myrxmvpbaseproject.widget.view.BorderRelativeLayout>

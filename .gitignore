@@ -16,3 +16,16 @@ refresh-layout/build
 /recycler/build/
 /refresh-header/build/
 /refresh-layout/build/
+/jiaozivideoplayer/build/
+/WordMapLib/build/
+.idea/caches/
+.idea/gradle.xml
+.idea/markdown-navigator.xml
+.idea/markdown-navigator/
+.idea/misc.xml
+.idea/runConfigurations.xml
+.idea/vcs.xml
+gradle/
+gradlew
+gradlew.bat
+

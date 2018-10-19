@@ -1,6 +1,0 @@
-com.sigseg.android.map.lib.test
-int drawable ic_launcher 0x7f010000
-int id worldview 0x7f020000
-int layout activity_iamge_view 0x7f030000
-int string app_name 0x7f040000
-int string hello 0x7f040001

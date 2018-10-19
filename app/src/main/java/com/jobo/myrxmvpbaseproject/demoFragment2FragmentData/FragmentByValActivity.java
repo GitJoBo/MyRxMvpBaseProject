@@ -148,4 +148,19 @@ public class FragmentByValActivity extends BaseByValActivity {
         mTablayout.getTabAt(2).setIcon(R.mipmap.like);
         mTablayout.getTabAt(3).setIcon(R.mipmap.person);
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (mViewPager!=null){
+            mViewPager=null;
+        }
+        if (mFragments!=null){
+            mFragments.clear();
+            mFragments=null;
+        }
+        if (mTabLayoutActivityAdapter!=null){
+            mTabLayoutActivityAdapter = null;
+        }
+    }
 }

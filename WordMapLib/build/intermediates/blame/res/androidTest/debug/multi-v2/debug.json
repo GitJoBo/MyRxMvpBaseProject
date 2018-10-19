@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "H:\\WorkSpace\\MyRxMvpBaseProject\\WordMapLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\values_values.arsc.flat",
+            "outputFile": "H:\\WorkSpace\\Demos\\MyRxMvpBaseProject\\WordMapLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\values_values.arsc.flat",
             "map": [
                 {
-                    "source": "H:\\WorkSpace\\MyRxMvpBaseProject\\WordMapLib\\build\\intermediates\\packaged_res\\debug\\values\\values.xml",
+                    "source": "H:\\WorkSpace\\Demos\\MyRxMvpBaseProject\\WordMapLib\\build\\intermediates\\packaged_res\\debug\\values\\values.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

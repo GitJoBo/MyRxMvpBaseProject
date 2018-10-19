@@ -19,5 +19,7 @@
 
     <string name="is_null">暂无数据</string>
 
+    <string name="navigation_drawer_open" translatable="false">close drawer</string>
+    <string name="navigation_drawer_close" translatable="false">open drawer</string>
 
 </resources>

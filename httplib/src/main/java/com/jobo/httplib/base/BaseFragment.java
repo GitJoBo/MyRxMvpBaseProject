@@ -60,6 +60,9 @@ public abstract class BaseFragment extends RxFragment {
                 group.removeView(mContentView);
             }
         }
+        if (mBind==null){//避免fragment复用后点击事件无效
+            mBind = ButterKnife.bind(this, mContentView);
+        }
 //        mBind = ButterKnife.bind(this, mContentView);
 
         return mContentView;

@@ -82,6 +82,8 @@
         <activity android:name=".demoVIdeoRecord.SmallVideoLib2.SendSmallVideoActivity"/>
         <activity android:name=".demoVIdeoRecord.SmallVideoLib2.CompressActivity"/>
         <activity android:name=".demoFragment2FragmentData.FragmentByValActivity"/>
+        <activity android:name=".demoMaterialDesign.DetailActivity"/>
+        <activity android:name=".demoMaterialDesign.MaterialDesignActivity"/>
 
 
         <provider

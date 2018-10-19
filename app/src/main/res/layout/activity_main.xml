@@ -68,6 +68,12 @@
                     android:text="短视频录制"
                     />
             <Button
+                    android:id="@+id/btn_material_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Material Design风格"
+                    />
+            <Button
                     android:id="@+id/btn_fragment_byval"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

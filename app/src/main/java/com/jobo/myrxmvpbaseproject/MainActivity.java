@@ -14,6 +14,7 @@ import com.jobo.myrxmvpbaseproject.demoBanner.activity.BannerActivity;
 import com.jobo.myrxmvpbaseproject.demoBigBitmap.BigBitmapActivity;
 import com.jobo.myrxmvpbaseproject.demoFragment2FragmentData.FragmentByValActivity;
 import com.jobo.myrxmvpbaseproject.demoGlide.activity.GlideActivity;
+import com.jobo.myrxmvpbaseproject.demoMaterialDesign.MaterialDesignActivity;
 import com.jobo.myrxmvpbaseproject.demoRecycleview.activity.RecycleActivity;
 import com.jobo.myrxmvpbaseproject.demoUpDownload.activity.UpDownloadActivity;
 import com.jobo.myrxmvpbaseproject.demoVIdeoRecord.VideoRecordActivity;
@@ -49,7 +50,7 @@ public class MainActivity extends BaseActivity {
 
     @OnClick({R.id.login, R.id.btn_recyclerView, R.id.btn_up_download, R.id.btn_glide, R.id.btn_banner,
             R.id.btn_video_display, R.id.btn_big_bitmap, R.id.btn_voice2text, R.id.btn_video_record,
-            R.id.btn_fragment_byval})
+            R.id.btn_fragment_byval,R.id.btn_material_design})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.login:
@@ -110,6 +111,9 @@ public class MainActivity extends BaseActivity {
                 } else {
                     ToastUtils.showToast("权限不足");
                 }
+                break;
+            case R.id.btn_material_design:
+                UIUtils.startActivity(this, MaterialDesignActivity.class);
                 break;
 
             case R.id.btn_fragment_byval:

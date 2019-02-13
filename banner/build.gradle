@@ -34,8 +34,8 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    provided 'com.android.support:support-v4:27.1.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly 'com.android.support:support-v4:27.1.0'
     //暴力统一版本,避免未知bug
     configurations.all {
         resolutionStrategy.force 'com.android.support:support-annotations:27.1.0'
